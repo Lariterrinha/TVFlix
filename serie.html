@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Serie</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+ 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logotipo -->
+            <h1 class="col-md-8">
+                <a href="index.html">
+                    <img src="assets/img/logotipo.png" alt="Logotipo" style="width: 50%;">
+                </a>
+            </h1>
+
+            <!-- Navegação -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="explorer.html" class="nav-link">Explorador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class = "conteudo">
+        <!-- Informações Gerais -->
+        <section class="container my-5 descricao">
+            <h2>Visão Geral</h2>
+            <hr>
+            <div class=" row align-items-center">
+                <div class="col-md-6">
+                    <img src="" alt="Capa da Série" class=" series-banner img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="series-title"></h3>
+                    <p><strong>Plataforma de Exibição: </strong><span class="platform-info"></span></p>
+                    <p><strong>Gênero(s): </strong><span class="genres-info"></span></p>
+                    <p><strong>Data de Lançamento: </strong><span class="release-date"></span></p>
+                    <p><strong>Descrição: </strong><span class="description"></span></p>
+                    <p><strong>Popularidade: </strong><span class="popularity"></span></p>
+                    <p><strong>Idioma Original: </strong><span class="original-language"></span></p>
+                    <p><strong>Temporadas: </strong><span class="seasons-info"></span> | <strong>Episódios: </strong><span class="episodes-info"></span></p>
+                    <button class="favoritar-serie btn btn-primary">Favoritar Série</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Elenco -->
+        <section class="container my-5 ">
+            <h2>Elenco</h2>
+            <hr>
+            <div class="elenco-container row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+            </div>
+        </section>
+
+        <!-- Temporadas e Episódios -->
+        <!-- 
+        <div class="container">
+            <h2>Temporadas e Episódios</h2>
+            <hr>
+            <div class="seasons-container"></div>
+            
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Temporada 1</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="assets/img/bannerfriends.jpg" class="card-img-top" alt="Banner da Série" style="width: 100px; height: auto;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Episódio 1: O Uma Noite</h5>
+                                    <p class="card-text">Rachel foge do seu casamento e se junta ao grupo de amigos, mudando sua vida para sempre.</p>
+                                    <p class="card-text"><small class="text-muted">Duração: 22 min</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div> 
+        
+        -->
+    </div>    
+
+    
+    <!-- Scripts Bootstrap e Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba70287604.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/app_serie.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Logotipo e Navegação */
+/*
+body section img{
+    height: vh;    
+}
+*/
+header{
+    background-color: #30007cee;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin: 0px; 
+    padding: 0px;
+    z-index: 1000;
+}
+
+header .container {
+    height: 10vh; 
+}
+
+
+/* Explorador */
+header nav li {
+    text-decoration: none;
+    font-size: 200%; 
+    color: white !important;
+}
+
+header div a:hover {
+    font-size: 101%; 
+
+}
+
+
+
+/* carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px; 
+    margin: 0px; 
+    padding: 0px;
+
+}
+
+
+/* Filtro de pesquisa*/
+.filtro-container {
+    background-color: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    position: sticky;
+    height: 100;
+    max-width: 400px;
+    width: 30%;
+}
+
+.filtro-container h2 {
+    text-align:center;
+}
+
+body .forms label{
+    margin-top: 15px;
+}
+
+body .descricao {
+    font-size: 1.4rem;
+}
+
+body .series-title {
+    font-size: 4rem;
+}
+
+body .conteudo {
+    margin-top: 1vh;
+    padding-top: 10vh !important;
+}
+
+.result-serie .card{
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10% !important;
+}
+
+body .conteudo #itens-da-pesquisa .col-md-3{
+    margin-bottom: 1rem !important; /* Adiciona espaço entre os itens */
+}
+
+
+.series-title {
+    font-size: 2rem;
+    color: #30007c;
+    margin-bottom: 15px;
+}
+
+/*Botão de favoritar serie*/
+.btn-primary {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:  #30007c !important;
+    border: none !important;
+}
+
+/* Deixa os card quadradinhos*/
+.card img{
+    height: 200px; 
+    width: 100%; 
+    object-fit: cover; /* garante que a imagem preencha o contêiner sem deformar */
+
+}
+
+/* Formata o card de epsodios*/
+.episode-img {
+    height: 50px; 
+    width: 100%;
+    object-fit:fill;
+}
+
+.episode-info {
+    margin-bottom: 10px; /* Espaçamento entre os episódios */
+}
+
+.card-img-top {
+    align-self: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo responsivo telas celulares*/
+@media (max-width: 700px) {
+
+    header .container {
+        height: 12vh; /* Menor altura do cabeçalho em telas pequenas */
+    }
+    
+
+    body .conteudo {
+        margin-top: 60px; /* Ajustando o espaçamento conforme o novo tamanho do cabeçalho */
+    }
+
+    .conteudo{
+        font-size: 10px !important; 
+    }
+    .carousel-caption {
+        padding: 10px; 
+        font-size: 0.9rem; 
+        bottom: 10px; 
+    }
+
+    .filtro-container {
+        width: 95%; 
+    }
+
+    .series-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .card img {
+        height: 120px; 
+    }
+}
